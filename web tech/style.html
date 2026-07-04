@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Ride - GoRide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        form {
+            text-align: left;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #e8491d;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #35424a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Book Your Ride</h2>
+        
+        <!-- Booking Form -->
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" placeholder="Enter pickup location" required>
+
+            <label for="dropoff">Dropoff Location:</label>
+            <input type="text" id="dropoff" placeholder="Enter dropoff location" required>
+
+            <label for="vehicle">Select Vehicle Type:</label>
+            <select id="vehicle">
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="bike">Bike</option>
+                <option value="van">Van</option>
+            </select>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+
+        <!-- Ride Availability Table -->
+        <h3>Available Rides</h3>
+        <table>
+            <tr>
+                <th>Vehicle</th>
+                <th>Seats</th>
+                <th>Price per km</th>
+                <th>Availability</th>
+            </tr>
+            <tr>
+                <td>Sedan</td>
+                <td>4</td>
+                <td>45/-</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>SUV</td>
+                <td>6</td>
+                <td>65/-</td>
+                <td>Limited</td>
+            </tr>
+            <tr>
+                <td>Bike</td>
+                <td>1</td>
+                <td>25/-</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Van</td>
+                <td>8</td>
+                <td>85/-</td>
+                <td>Few Left</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
+
